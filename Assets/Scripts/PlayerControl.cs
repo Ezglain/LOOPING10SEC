@@ -48,25 +48,26 @@ public class PlayerControl : MonoBehaviour
 
     void KeyControl()
     {
+        //vel = velocity
         vel = Vector3.zero;
         if (Input.GetKey(upKey))
         {
             vel.z = speed;
             rotation = vel;
         }
-        vel = Vector3.zero;
+       // vel = Vector3.zero;
         if (Input.GetKey(downKey))
         {
             vel.z = -speed;
             rotation = vel;
         }
-        vel = Vector3.zero;
+      //  vel = Vector3.zero;
         if (Input.GetKey(rightKey))
         {
             vel.x = speed;
             rotation = vel;
         }
-        vel = Vector3.zero;
+       // vel = Vector3.zero;
         if (Input.GetKey(leftKey))
         {
             vel.x = -speed;
